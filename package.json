@@ -4,6 +4,8 @@
   "description": "",
   "main": "main.js",
   "scripts": {
+    "clean": "rm -r ./build",
+    "build": "npm run bundle; mkdir build; cp index.html build; cp bundle* build",
     "test": "echo \"Error: no test specified\" && exit 1",
     "bundle": "rollup -c",
     "watch": "rollup -c -w"

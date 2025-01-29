@@ -19,7 +19,6 @@ export default [{
     format: "esm"
   },
   plugins: [
-    nodeResolve(),
-    serve('.')
+    nodeResolve()
   ],
 }]
